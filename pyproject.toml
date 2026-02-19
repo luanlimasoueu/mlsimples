@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlsimples"
+version = "0.1.0"
+description = "Biblioteca educacional de machine learning simples com regressão linear"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    { name = "Luan L", email = "luan.emerson.lima@gmail.com" }
+]
+
+license = { text = "MIT" }
+
+keywords = ["machine learning", "regression", "statistics", "education"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mlsimples*"]
